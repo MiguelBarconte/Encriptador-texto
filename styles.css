@@ -16,6 +16,7 @@ body{
     align-items: center;
     justify-content: space-evenly;
     gap: 10px;
+    margin: 0.5rem 0;
 }
 main{
     height: 80vh;
@@ -63,4 +64,19 @@ button{
 }
 button:hover{
     background-color: var(--color-2);
+}
+@media (width< 500px){
+    .container{
+        flex-flow: column nowrap;
+        
+    }
+    div.container{
+        width: 90%;
+    }
+    .tittle{
+        font-size: 1rem;
+    }
+    small{
+        font-size: 0.7rem;
+    }
 }
