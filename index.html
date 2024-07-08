@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encripnator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img class="icon" src="./src/img/logo.jpg" />
+    </header>
+    <main class='container'>
+        <div class="container col">
+            <label  class="title" for="text">Texto para codificar</label>
+            <textarea name="text" id="text" class="text" required="true"></textarea>
+            <span><small>i - No funciona con caracteres con tildes, similares  o emojis.</small></span>
+            <div>
+                <button onclick="encriptar()">Encriptar</button>
+                <button onclick="desencriptar()">Desencriptar</button>
+                <button onclick="clean()">Borrar</button>
+            </div>
+        </div>
+        <div class="container col">
+            <span class="title">Texto codificado</span>
+            <span class="text" id="exit_text"></span>
+            <button onclick="copiarTexto()">Copiar</button>
+        </div>
+    </main>
+    <footer>
+        <img class="icon" src="./src/img/logo.jpg" />
+        <div class="container col">
+            © Encripnator - Miguel Barconte 2024
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
